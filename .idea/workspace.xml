@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="" />
+    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/requests/PostUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/services/PostService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/services/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +34,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2G7evZqnDuMcxEEK0fvgBHjCYu2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,7 +56,8 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -78,12 +92,23 @@
       <workItem from="1665750201202" duration="7856000" />
       <workItem from="1665758345970" duration="1683000" />
       <workItem from="1665770253294" duration="4451000" />
-      <workItem from="1665861576468" duration="5229000" />
+      <workItem from="1665861576468" duration="9758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

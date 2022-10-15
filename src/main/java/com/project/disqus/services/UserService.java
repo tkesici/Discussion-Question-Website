@@ -9,7 +9,8 @@ import java.util.Optional;
 
 @Service
 public class UserService {
-    UserRepository userRepository;
+
+    private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
 
@@ -25,6 +26,7 @@ public class UserService {
     public User saveOneUser(User newUser) {
         return userRepository.save(newUser);
     }
+
     public User getOneUser(Long userId) {
         return userRepository.findById(userId).orElse(null);
     }

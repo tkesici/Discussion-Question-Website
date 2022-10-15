@@ -3,6 +3,7 @@ package com.project.disqus.controllers;
 import com.project.disqus.entities.Post;
 import com.project.disqus.repos.PostRepository;
 import com.project.disqus.requests.PostCreateRequest;
+import com.project.disqus.requests.PostUpdateRequest;
 import com.project.disqus.services.PostService;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,16 +20,35 @@ public class PostController {
         this.postService = postService;
     }
 
-    @GetMapping
-    public List<Post> getAllPosts(@RequestParam Optional<Long> userId) {
-        return postService.getAllPosts(userId);
+    @GetMapping("/users")
+    public List<Post> getAllPostsById(@RequestParam(name = "id") Optional<Long> userId) {
+        return postService.getAllPostsById(userId);
     }
+
+    @GetMapping()
+    public List<Post> getAllPosts() {
+        return postService.getAllPosts();
+    }
+
     @PostMapping
     public Post createOnePost(@RequestBody PostCreateRequest newPostRequest) {
         return postService.createOnePost(newPostRequest);
     }
+
     @GetMapping("/{postId}")
     public Post getOnePost(@PathVariable Long postId) {
         return postService.getOnePostById(postId);
     }
+
+    @PutMapping("/{postId}")
+    public Post updateOnePost(@PathVariable Long postId,
+                              @RequestBody PostUpdateRequest updatePost) {
+        return postService.updateOnePostById(postId, updatePost);
+    }
+
+    @DeleteMapping("/{postId}")
+    public void deleteOnePost(@PathVariable Long postId) {
+        postService.deleteOnePostById(postId);
+    }
+
 }
