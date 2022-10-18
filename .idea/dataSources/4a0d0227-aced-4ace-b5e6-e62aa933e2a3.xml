@@ -937,65 +937,115 @@ SELECT|sys.sys_config
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="295" parent="287" name="PRIMARY">
+    <index id="295" parent="287" name="FKs1slvnkuemjsq2kj4h3vhx7i1">
+      <ColNames>post_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="296" parent="287" name="FK8kcum44fvpupyw6f5baccx25c">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="297" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="288" name="id">
+    <foreign-key id="298" parent="287" name="FKs1slvnkuemjsq2kj4h3vhx7i1">
+      <ColNames>post_id</ColNames>
+      <RefTableName>post</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="299" parent="287" name="FK8kcum44fvpupyw6f5baccx25c">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="300" parent="288" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="297" parent="288" name="post_id">
+    <column id="301" parent="288" name="post_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
     </column>
-    <column id="298" parent="288" name="user_id">
+    <column id="302" parent="288" name="user_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
     </column>
-    <key id="299" parent="288" name="PRIMARY">
+    <index id="303" parent="288" name="FKca8aeuv2tuf2pulv52pc7nr07">
+      <ColNames>post_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="304" parent="288" name="FK8e6gn3lahxm31upofxpnt22hb">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="305" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="300" parent="289" name="id">
+    <foreign-key id="306" parent="288" name="FKca8aeuv2tuf2pulv52pc7nr07">
+      <ColNames>post_id</ColNames>
+      <RefTableName>post</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="307" parent="288" name="FK8e6gn3lahxm31upofxpnt22hb">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="308" parent="289" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="301" parent="289" name="text">
+    <column id="309" parent="289" name="text">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="302" parent="289" name="title">
+    <column id="310" parent="289" name="title">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="303" parent="289" name="user_id">
+    <column id="311" parent="289" name="user_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
     </column>
-    <key id="304" parent="289" name="PRIMARY">
+    <index id="312" parent="289" name="FK72mt33dhhs48hf9gcqrq4fxte">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="313" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="305" parent="290" name="id">
+    <foreign-key id="314" parent="289" name="FK72mt33dhhs48hf9gcqrq4fxte">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="315" parent="290" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="306" parent="290" name="password">
+    <column id="316" parent="290" name="password">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="307" parent="290" name="username">
+    <column id="317" parent="290" name="username">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="308" parent="290" name="PRIMARY">
+    <key id="318" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
