@@ -4,10 +4,8 @@ import com.project.disqus.services.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import com.project.disqus.entities.User;
-import com.project.disqus.repos.UserRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
@@ -36,7 +34,7 @@ public class UserController {
     @GetMapping("/{userId}")
     public User getOneUser(@PathVariable Long userId) {
         //custom exception
-        return userService.getOneUser(userId);
+        return userService.getOneUserById(userId);
     }
 
     @PutMapping("/{userId}")

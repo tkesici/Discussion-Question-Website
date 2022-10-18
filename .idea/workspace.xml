@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="Created PutMapping in the PostController field.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/requests/CommentCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a0d0227-aced-4ace-b5e6-e62aa933e2a3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4a0d0227-aced-4ace-b5e6-e62aa933e2a3.xml" afterDir="false" />
+    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="Created CommentCreateRequest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/requests/CommentUpdateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/repos/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/repos/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/repos/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/repos/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/repos/CommentRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2G7evZqnDuMcxEEK0fvgBHjCYu2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -54,9 +63,20 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DisqusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="disqus" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.disqus.DisqusApplication" />
@@ -80,6 +100,7 @@
       <workItem from="1665770253294" duration="4451000" />
       <workItem from="1665861576468" duration="9820000" />
       <workItem from="1665922805670" duration="9091000" />
+      <workItem from="1666087119015" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="Created PutMapping in the PostController field.">
       <created>1665872813259</created>
@@ -88,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665872813259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created CommentCreateRequest">
+      <created>1666087165719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666087165719</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +136,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created PutMapping in the PostController field." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created PutMapping in the PostController field." />
+    <MESSAGE value="Created CommentCreateRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CommentCreateRequest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

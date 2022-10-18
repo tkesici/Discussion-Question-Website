@@ -3,12 +3,9 @@ package com.project.disqus.services;
 import com.project.disqus.entities.Post;
 import com.project.disqus.entities.User;
 import com.project.disqus.repos.PostRepository;
-import com.project.disqus.repos.UserRepository;
 import com.project.disqus.requests.PostCreateRequest;
 import com.project.disqus.requests.PostUpdateRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Optional;
@@ -38,7 +35,7 @@ public class PostService {
     }
 
     public Post createOnePost(PostCreateRequest newPostRequest) {
-        User user = userService.getOneUser(newPostRequest.getUserId());
+        User user = userService.getOneUserById(newPostRequest.getUserId());
         if (user == null) {
             return null;
         } else {

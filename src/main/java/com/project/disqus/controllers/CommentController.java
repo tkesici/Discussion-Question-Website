@@ -2,6 +2,7 @@ package com.project.disqus.controllers;
 
 import com.project.disqus.entities.Comment;
 import com.project.disqus.requests.CommentCreateRequest;
+import com.project.disqus.requests.CommentUpdateRequest;
 import com.project.disqus.services.CommentService;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +22,7 @@ public class CommentController {
     @GetMapping
     public List<Comment> getAllComments(@RequestParam Optional<Long> userId,
                                         @RequestParam Optional<Long> postId) {
-        return commentService.getAllCommentsWithParam(userId,postId);
+        return commentService.getAllCommentsWithParam(userId, postId);
     }
 
     @PostMapping
@@ -33,5 +34,17 @@ public class CommentController {
     public Comment getOneComment(@PathVariable Long commentId) {
         return commentService.getOneCommentById(commentId);
     }
+
+    @PutMapping("/{commentId}")
+    public Comment updateOneComment(@PathVariable Long commentId,
+                                    @RequestBody CommentUpdateRequest request) {
+        return commentService.updateOneCommentById(commentId, request);
+    }
+
+    @DeleteMapping("/{commentId}")
+    public void deleteOneComment(@PathVariable Long commentId) {
+        commentService.deleteOneCommentById(commentId);
+    }
+
 
 }
