@@ -5,13 +5,16 @@ import com.project.disqus.entities.User;
 import com.project.disqus.repos.PostRepository;
 import com.project.disqus.requests.PostCreateRequest;
 import com.project.disqus.requests.PostUpdateRequest;
+import com.project.disqus.responses.PostResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PostService {
+
     private PostRepository postRepository;
     private UserService userService;
 
@@ -20,14 +23,15 @@ public class PostService {
         this.userService = userService;
     }
 
-    public List<Post> getAllPostsById(Optional<Long> userId) {
+    public List<PostResponse> getAllPosts(Optional<Long> userId) {
+        List<Post> list;
         if (userId.isPresent()) {
-            return postRepository.findByUserId(userId);
-        } else return null;
-    }
+            list = postRepository.findByUserId(userId.get());
+        } else {
+            list = postRepository.findAll();
+        }
+        return list.stream().map(p -> new PostResponse(p)).collect(Collectors.toList());
 
-    public List<Post> getAllPosts() {
-        return postRepository.findAll();
     }
 
     public Post getOnePostById(Long postId) {

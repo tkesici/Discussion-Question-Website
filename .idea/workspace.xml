@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="Created CommentUpdateRequest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/LikeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/requests/LikeCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/LikeService.java" afterDir="false" />
+    <list default="true" id="f238a968-8a9a-49fc-a51f-8e7206b730d1" name="Default Changelist" comment="Created LikeController and LikeService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/responses/PostResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/entities/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/entities/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/repos/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/repos/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/disqus/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/controllers/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/entities/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/entities/Post.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/services/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/services/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/disqus/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/disqus/services/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +64,10 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.splitter.proportion" value="0.23535156" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DisqusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="disqus" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.disqus.DisqusApplication" />
@@ -99,7 +91,15 @@
       <workItem from="1665770253294" duration="4451000" />
       <workItem from="1665861576468" duration="9820000" />
       <workItem from="1665922805670" duration="9091000" />
-      <workItem from="1666087119015" duration="2658000" />
+      <workItem from="1666087119015" duration="3557000" />
+      <workItem from="1666092141249" duration="782000" />
+      <workItem from="1666099196866" duration="301000" />
+      <workItem from="1666099520289" duration="2871000" />
+      <workItem from="1666124448331" duration="1398000" />
+      <workItem from="1666193587784" duration="4566000" />
+      <workItem from="1666246210645" duration="218000" />
+      <workItem from="1666255803641" duration="607000" />
+      <workItem from="1666338724813" duration="2666000" />
     </task>
     <task id="LOCAL-00001" summary="Created PutMapping in the PostController field.">
       <created>1665872813259</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666088252446</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created LikeController and LikeService">
+      <created>1666089848961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666089848961</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
     <MESSAGE value="Created PutMapping in the PostController field." />
     <MESSAGE value="Created CommentCreateRequest" />
     <MESSAGE value="Created CommentUpdateRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created CommentUpdateRequest" />
+    <MESSAGE value="Created LikeController and LikeService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created LikeController and LikeService" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
